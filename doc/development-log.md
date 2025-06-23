@@ -45,3 +45,9 @@ This document tracks the development milestones and setup decisions for future r
   - Standard Next.js file structure with App Router
 
 ### 🎯 Current Project Structure
+
+## Next
+
+- [ ] Add shadcn components
+- [ ] Build initial pages
+- [ ] Add navigation functionality
