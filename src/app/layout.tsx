@@ -38,6 +38,10 @@ export default function RootLayout({
             aria-label="Main content area"
           >
             {children}
+            {/* Example of Children view (?):
+            - on the left or taking all the main width a div with header
+            - with sometimes a div on the right that don't have header
+            */}
           </main>
         </div>
       </body>
