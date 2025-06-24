@@ -1,29 +1,36 @@
+import { Search, SquarePen } from "lucide-react";
+
 export default function Sidebar() {
   return (
-    <aside
-      className="
-          h-full 
-          w-fit 
-          py-4
-        "
-      aria-label="Sidebar"
-    >
+    <aside className="h-full w-fit py-2" aria-label="Sidebar">
       <header
-        className="
-            whitespace-nowrap
-          "
+        className="whitespace-nowrap text-neutral-700 w-80 flex items-center justify-between"
         aria-label="Sidebar header"
       >
         <span
-          className="
-              text-sm 
-              font-medium 
-              text-gray-700
-            "
+          className="text-sm font-semibold"
           aria-label="Company or team name"
         >
           Acme Inc.
         </span>
+
+        <div
+          className="flex items-center gap-2"
+          aria-label="Search and create buttons"
+        >
+          <button
+            className="p-1 hover:bg-neutral-100 rounded transition-colors"
+            aria-label="Search workspace"
+          >
+            <Search size={16} />
+          </button>
+          <button
+            className="bg-white rounded-lg p-1.5 border border-neutral-200 hover:bg-neutral-100 transition-colors duration-200"
+            aria-label="Create new post, issue or task"
+          >
+            <SquarePen size={16} />
+          </button>
+        </div>
       </header>
     </aside>
   );

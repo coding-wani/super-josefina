@@ -29,28 +29,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div
-          className="
-            h-screen 
-            p-2 
-            flex 
-            items-center 
-            justify-center 
-            bg-gray-100
-          "
+          className="h-screen px-2 py-2 flex items-center justify-center bg-neutral-100 gap-4"
           aria-label="Application layout"
         >
           <Sidebar />
           <main
-            className="
-              h-full 
-              w-full 
-              ml-2 
-              p-4 
-              bg-white 
-              border 
-              border-gray-200 
-              rounded-lg
-            "
+            className="h-full w-full p-4 bg-white border border-neutral-200 rounded"
             aria-label="Main content area"
           >
             {children}
