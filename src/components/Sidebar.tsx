@@ -19,7 +19,7 @@ export default function Sidebar() {
           aria-label="Search and create buttons"
         >
           <button
-            className="p-1 hover:bg-neutral-100 rounded transition-colors"
+            className="p-1.5 hover:bg-neutral-200 rounded-lg transition-colors"
             aria-label="Search workspace"
           >
             <Search size={16} />
