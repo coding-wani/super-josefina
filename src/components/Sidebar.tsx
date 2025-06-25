@@ -1,3 +1,4 @@
+import { config } from "@/lib/config";
 import { Search, SquarePen } from "lucide-react";
 
 export default function Sidebar() {
@@ -11,7 +12,7 @@ export default function Sidebar() {
           className="text-sm font-semibold"
           aria-label="Company or team name"
         >
-          Acme Inc.
+          {config.companyName}
         </span>
 
         <div
