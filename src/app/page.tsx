@@ -1,3 +1,9 @@
+"use client";
+
+import { useMainContent } from "@/lib/page-content-hooks";
+
 export default function Home() {
-  return <h1>Content area</h1>;
+  useMainContent("Home header", "Home main content");
+
+  return null;
 }
