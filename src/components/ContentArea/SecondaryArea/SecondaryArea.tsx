@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Header } from "./Header/Header";
+import { Content } from "./Content/Content";
 
 export interface SecondaryAreaProps {
   children: ReactNode;
@@ -22,7 +23,7 @@ export function SecondaryArea({
         aria-label="Secondary content area"
       >
         {header && <Header>{header}</Header>}
-        <div className="flex-1 p-4 overflow-auto">{children}</div>
+        <Content>{children}</Content>
       </aside>
     </>
   );

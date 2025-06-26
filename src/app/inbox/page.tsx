@@ -1,15 +1,12 @@
-"use client";
-
-import { useMainAndSecondaryContent } from "@/lib/page-content-hooks";
+import { MainArea, SecondaryArea } from "@/components/ContentArea";
 
 export default function InboxPage() {
-  useMainAndSecondaryContent(
-    "Inbox main header",
-    "Inbox main content",
-    "Inbox secondary header",
-    "inbox secondary content",
-    "half"
+  return (
+    <>
+      <MainArea header="Inbox main header">Inbox main content</MainArea>
+      <SecondaryArea header="Inbox secondary header" widthPreset="half">
+        inbox secondary content
+      </SecondaryArea>
+    </>
   );
-
-  return null;
 }

@@ -1,14 +1,12 @@
-"use client";
-
-import { useMainAndSecondaryContent } from "@/lib/page-content-hooks";
+import { MainArea, SecondaryArea } from "@/components/ContentArea";
 
 export default function IssuesPage() {
-  useMainAndSecondaryContent(
-    "Issues header",
-    "Issues main content",
-    "Issues secondary header",
-    "Issues secondary content"
+  return (
+    <>
+      <MainArea header="Issues header">Issues main content</MainArea>
+      <SecondaryArea header="Issues secondary header">
+        Issues secondary content
+      </SecondaryArea>
+    </>
   );
-
-  return null;
 }

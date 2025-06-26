@@ -1,9 +1,13 @@
 import { config } from "@/lib/config";
 import { Search, SquarePen } from "lucide-react";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <aside className="h-full w-fit py-2" aria-label="Sidebar">
+    <aside
+      className="h-full w-fit py-2 flex flex-col gap-4"
+      aria-label="Sidebar"
+    >
       <header
         className="whitespace-nowrap text-neutral-700 w-80 flex items-center justify-between"
         aria-label="Sidebar header"
@@ -33,6 +37,11 @@ export default function Sidebar() {
           </button>
         </div>
       </header>
+      <div className="flex flex-col gap-2">
+        <Link href="/">Home</Link>
+        <Link href="/inbox">Inbox</Link>
+        <Link href="/issues">Issues</Link>
+      </div>
     </aside>
   );
 }

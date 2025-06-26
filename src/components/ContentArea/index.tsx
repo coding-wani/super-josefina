@@ -1,5 +1,3 @@
-// Legacy exports (pour compatibilité si besoin)
-export { Content, type ContentProps } from "./Content";
 export { MainArea, type MainAreaProps } from "./MainArea/MainArea";
 export {
   SecondaryArea,
@@ -11,5 +9,4 @@ export {
   type HeaderProps as SecondaryHeaderProps,
 } from "./SecondaryArea/Header/Header";
 
-// Nouveaux exports optimisés
-export { OptimizedContent } from "./OptimizedContent";
+export { ContentArea } from "./ContentArea";

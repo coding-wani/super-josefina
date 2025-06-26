@@ -1,9 +1,5 @@
-"use client";
-
-import { useMainContent } from "@/lib/page-content-hooks";
+import { MainArea } from "@/components/ContentArea";
 
 export default function Home() {
-  useMainContent("Home header", "Home main content");
-
-  return null;
+  return <MainArea header="Home header">Home main content</MainArea>;
 }
