@@ -1,4 +1,4 @@
-import { MainArea, SecondaryArea } from "@/components/Content";
+import { MainArea, SecondaryArea } from "@/components/layout/Content";
 
 export default function InboxPage() {
   return (
