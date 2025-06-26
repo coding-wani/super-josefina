@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Sidebar() {
   return (
     <aside
-      className="h-full w-fit py-2 flex flex-col gap-4"
+      className="h-full w-fit p-2 mr-2 flex flex-col gap-4"
       aria-label="Sidebar"
     >
       <header
@@ -34,7 +34,7 @@ export default function Sidebar() {
           </button>
         </div>
       </header>
-      <div className="flex flex-col gap-2 px-2" aria-label="Sidebar links">
+      <div className="flex flex-col gap-2" aria-label="Sidebar links">
         <Link href="/inbox">Inbox</Link>
       </div>
     </aside>
