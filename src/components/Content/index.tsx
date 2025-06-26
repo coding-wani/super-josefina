@@ -9,4 +9,4 @@ export {
   type HeaderProps as SecondaryHeaderProps,
 } from "./SecondaryArea/Header/Header";
 
-export { ContentArea } from "./ContentArea";
+export { Content } from "./Content";

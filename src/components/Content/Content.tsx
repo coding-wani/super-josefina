@@ -2,11 +2,11 @@ import React, { ReactNode } from "react";
 import { MainArea } from "./MainArea/MainArea";
 import { SecondaryArea } from "./SecondaryArea/SecondaryArea";
 
-export interface ContentAreaProps {
+export interface ContentProps {
   children: ReactNode;
 }
 
-export function ContentArea({ children }: ContentAreaProps) {
+export function Content({ children }: ContentProps) {
   const childrenArray = React.Children.toArray(children);
 
   const mainAreaNode = childrenArray.find(

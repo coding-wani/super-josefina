@@ -12,12 +12,9 @@ export default function Sidebar() {
         className="whitespace-nowrap text-neutral-700 w-80 flex items-center justify-between"
         aria-label="Sidebar header"
       >
-        <span
-          className="text-sm font-semibold"
-          aria-label="Company or team name"
-        >
+        <Link href="/" className="text-sm font-semibold" aria-label="Home link">
           {config.companyName}
-        </span>
+        </Link>
 
         <div
           className="flex items-center gap-2"
@@ -37,10 +34,8 @@ export default function Sidebar() {
           </button>
         </div>
       </header>
-      <div className="flex flex-col gap-2">
-        <Link href="/">Home</Link>
+      <div className="flex flex-col gap-2 px-2" aria-label="Sidebar links">
         <Link href="/inbox">Inbox</Link>
-        <Link href="/issues">Issues</Link>
       </div>
     </aside>
   );
