@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { Header } from "./Header/Header";
-import { Content } from "./Content/Content";
+import { Header } from "./Header";
+import { Content } from "./Content";
 
 export interface MainAreaProps {
   children: ReactNode;
