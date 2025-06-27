@@ -1,5 +1,15 @@
 import { config } from "@/lib/config";
-import { CircleDot, Inbox, NotebookPen, Search, SquarePen } from "lucide-react";
+import {
+  Box,
+  CircleDot,
+  Inbox,
+  Layers2,
+  NotebookPen,
+  Search,
+  SquarePen,
+  SquareUserRound,
+  UsersRound,
+} from "lucide-react";
 import Link from "next/link";
 import { colors } from "@/lib/colors";
 import { NavLink } from "@/components/layout/Sidebar/NavLink";
@@ -82,7 +92,36 @@ export default function Sidebar() {
         >
           <AccordionItem value="workspace">
             <AccordionTrigger>Workspace</AccordionTrigger>
-            <AccordionContent>Workspace NavLinks here</AccordionContent>
+            <AccordionContent className="flex flex-col gap-2">
+              <NavLink href="/members">
+                <UsersRound
+                  size={16}
+                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                />
+                <span className="text-sm">Members</span>
+              </NavLink>
+              <NavLink href="/teams">
+                <SquareUserRound
+                  size={16}
+                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                />
+                <span className="text-sm">Teams</span>
+              </NavLink>
+              <NavLink href="/projects">
+                <Box
+                  size={16}
+                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                />
+                <span className="text-sm">Projects</span>
+              </NavLink>
+              <NavLink href="/views">
+                <Layers2
+                  size={16}
+                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                />
+                <span className="text-sm">Views</span>
+              </NavLink>
+            </AccordionContent>
           </AccordionItem>
           <AccordionItem value="favorites">
             <AccordionTrigger>Favorites</AccordionTrigger>
