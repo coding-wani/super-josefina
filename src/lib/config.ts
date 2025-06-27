@@ -1,7 +1,8 @@
 const defaults = {
-  companyName: "Your Company Name",
+  workspaceName: "Your Workspace Name",
 };
 
 export const config = {
-  companyName: process.env.NEXT_PUBLIC_COMPANY_NAME || defaults.companyName,
+  workspaceName:
+    process.env.NEXT_PUBLIC_WORKSPACE_NAME || defaults.workspaceName,
 } as const;
