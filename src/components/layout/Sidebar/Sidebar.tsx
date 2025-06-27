@@ -28,7 +28,7 @@ export default function Sidebar() {
             <Search size={16} />
           </button>
           <button
-            className={`${colors.bg.card} rounded-lg p-1.5 ${colors.border.primary} ${colors.hover.cardBg} transition-colors duration-200`}
+            className={`${colors.bg.card} rounded-lg p-1.5 border ${colors.border.primary} ${colors.hover.cardBg} transition-colors duration-200`}
             aria-label="Create new post, issue or task"
           >
             <SquarePen size={16} />
