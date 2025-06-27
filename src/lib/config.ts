@@ -1,5 +1,5 @@
 const defaults = {
-  workspaceName: "Your Workspace Name",
+  workspaceName: "Workspace Name",
 };
 
 export const config = {
