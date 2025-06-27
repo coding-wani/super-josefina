@@ -1,6 +1,7 @@
 import { config } from "@/lib/config";
 import { Search, SquarePen } from "lucide-react";
 import Link from "next/link";
+import { colors } from "@/lib/colors";
 
 export default function Sidebar() {
   return (
@@ -9,7 +10,7 @@ export default function Sidebar() {
       aria-label="Sidebar"
     >
       <header
-        className="whitespace-nowrap text-neutral-700 w-80 flex items-center justify-between"
+        className={`whitespace-nowrap ${colors.text.primary} w-80 flex items-center justify-between`}
         aria-label="Sidebar header"
       >
         <Link href="/" className="text-sm font-semibold" aria-label="Home link">
@@ -21,13 +22,13 @@ export default function Sidebar() {
           aria-label="Search and create buttons"
         >
           <button
-            className="p-1.5 hover:bg-neutral-200 rounded-lg transition-colors"
+            className={`p-1.5 ${colors.hover.bg} rounded-lg transition-colors`}
             aria-label="Search workspace"
           >
             <Search size={16} />
           </button>
           <button
-            className="bg-white rounded-lg p-1.5 border border-neutral-200 hover:bg-neutral-100 transition-colors duration-200"
+            className={`${colors.bg.card} rounded-lg p-1.5 ${colors.border.primary} ${colors.hover.cardBg} transition-colors duration-200`}
             aria-label="Create new post, issue or task"
           >
             <SquarePen size={16} />
@@ -35,7 +36,9 @@ export default function Sidebar() {
         </div>
       </header>
       <div className="flex flex-col gap-2" aria-label="Sidebar links">
-        <Link href="/inbox">Inbox</Link>
+        <Link className={colors.text.link} href="/inbox">
+          Inbox
+        </Link>
       </div>
     </aside>
   );

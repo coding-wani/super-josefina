@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { Header } from "./Header";
-import { Content } from "./Content";
+import { Body } from "./Body";
+import { colors } from "@/lib/colors";
 
 export interface MainAreaProps {
   children: ReactNode;
@@ -9,9 +10,12 @@ export interface MainAreaProps {
 
 export function MainArea({ children, header }: MainAreaProps) {
   return (
-    <div className="flex-1" aria-label="Main content area">
+    <div
+      className={`flex-1 ${colors.text.primary}`}
+      aria-label="Main content area"
+    >
       {header && <Header>{header}</Header>}
-      <Content>{children}</Content>
+      <Body>{children}</Body>
     </div>
   );
 }

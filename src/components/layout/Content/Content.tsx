@@ -1,12 +1,14 @@
 import React, { ReactNode } from "react";
 import { MainArea } from "./MainArea/MainArea";
 import { SecondaryArea } from "./SecondaryArea/SecondaryArea";
+import { colors } from "@/lib/colors";
 
 export interface ContentProps {
   children: ReactNode;
 }
 
 export function Content({ children }: ContentProps) {
+  //TODO : to simplify (no more array)
   const childrenArray = React.Children.toArray(children);
 
   const mainAreaNode = childrenArray.find(
@@ -20,7 +22,7 @@ export function Content({ children }: ContentProps) {
   if (!mainAreaNode) {
     return (
       <main
-        className="flex h-full w-full bg-white border border-neutral-200 rounded overflow-hidden"
+        className={`flex h-full w-full ${colors.bg.card} border ${colors.border.primary} rounded overflow-hidden`}
         aria-label="Content"
       >
         {children}
@@ -30,7 +32,7 @@ export function Content({ children }: ContentProps) {
 
   return (
     <main
-      className="flex h-full w-full bg-white border border-neutral-200 rounded overflow-hidden"
+      className={`flex h-full w-full ${colors.bg.card} border ${colors.border.primary} rounded overflow-hidden`}
       aria-label="Content"
     >
       {mainAreaNode}

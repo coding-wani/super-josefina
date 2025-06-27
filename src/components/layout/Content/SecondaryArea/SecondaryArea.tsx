@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { Header } from "./Header";
-import { Content } from "./Content";
+import { Body } from "./Body";
+import { colors } from "@/lib/colors";
 
 export interface SecondaryAreaProps {
   children: ReactNode;
@@ -17,13 +18,13 @@ export function SecondaryArea({
 
   return (
     <>
-      <div className="w-px bg-neutral-200 my-0" />
+      <div className={`w-px ${colors.bg.secondary} my-0`} />
       <aside
-        className={`${widthClass} overflow-auto flex flex-col`}
+        className={`${widthClass} overflow-auto flex flex-col ${colors.text.primary}`}
         aria-label="Secondary content area"
       >
         {header && <Header>{header}</Header>}
-        <Content>{children}</Content>
+        <Body>{children}</Body>
       </aside>
     </>
   );
