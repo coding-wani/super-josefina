@@ -12,7 +12,6 @@ import {
   SquareUserRound,
   UsersRound,
 } from "lucide-react";
-import Link from "next/link";
 import { colors } from "@/lib/colors";
 import { NavLink } from "@/components/layout/Sidebar/NavLink";
 
@@ -22,25 +21,19 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import WorkspaceSwitcher from "./WorkspaceSwitcher/WorkspaceSwitcher";
 
 export default function Sidebar() {
   return (
     <aside
-      className="h-full w-fit p-2 mr-2 flex flex-col gap-4"
+      className="h-full w-fit p-2 mr-2 flex flex-col gap-2.5"
       aria-label="Sidebar"
     >
       <header
         className={`whitespace-nowrap ${colors.text.primary} w-80 flex items-center justify-between`}
         aria-label="Sidebar header"
       >
-        <Link
-          href="/"
-          className="text-sm font-semibold"
-          aria-label="Workspace Home link"
-        >
-          {config.workspaceName}
-        </Link>
-
+        <WorkspaceSwitcher />
         <div
           className="flex items-center gap-2"
           aria-label="Search and create buttons"
