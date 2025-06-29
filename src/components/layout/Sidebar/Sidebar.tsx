@@ -26,7 +26,7 @@ import WorkspaceSwitcher from "./WorkspaceSwitcher/WorkspaceSwitcher";
 export default function Sidebar() {
   return (
     <aside
-      className="h-full w-fit p-2 mr-2 flex flex-col gap-2.5"
+      className="h-full w-fit p-2 mr-2 flex flex-col gap-2"
       aria-label="Sidebar"
     >
       <header
