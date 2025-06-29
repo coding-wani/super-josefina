@@ -21,11 +21,7 @@ export default function WorkspaceSwitcher() {
     <DropdownMenu aria-label="Workspace switcher">
       <DropdownMenuTrigger asChild>
         <button className="flex items-center gap-1.5 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md px-1 py-0.5 transition-colors">
-          <Heart
-            size={20}
-            strokeWidth={2.5}
-            className="text-violet-500 bg-violet-200 rounded p-1"
-          />
+          <Heart size={16} />
           <span className="text-sm font-semibold">{config.workspaceName}</span>
           <ChevronDown size={12} strokeWidth={2.5} />
         </button>
