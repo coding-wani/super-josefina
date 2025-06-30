@@ -18,7 +18,7 @@ export function SecondaryArea({
 
   return (
     <>
-      <div className={`w-px ${colors.bg.secondary} my-0`} />
+      <div className={`border-l ${colors.border.primary} self-stretch`} />
       <aside
         className={`${widthClass} overflow-auto flex flex-col ${colors.text.primary}`}
         aria-label="Secondary content area"
