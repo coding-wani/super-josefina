@@ -5,16 +5,31 @@ import { colors } from "@/lib/colors";
 
 export interface MainAreaProps {
   children: ReactNode;
-  header?: ReactNode;
+  pageTitle: string;
+  leftHeaderComponents?: ReactNode[];
+  rightHeaderComponents?: ReactNode[];
 }
 
-export function MainArea({ children, header }: MainAreaProps) {
+export function MainArea({
+  children,
+  pageTitle,
+  leftHeaderComponents = [],
+  rightHeaderComponents = [],
+}: MainAreaProps) {
   return (
     <div
       className={`flex-1 ${colors.text.primary}`}
       aria-label="Main content area"
     >
-      {header && <Header>{header}</Header>}
+      {(pageTitle ||
+        leftHeaderComponents.length > 0 ||
+        rightHeaderComponents.length > 0) && (
+        <Header
+          pageTitle={pageTitle}
+          leftComponents={leftHeaderComponents}
+          rightComponents={rightHeaderComponents}
+        />
+      )}
       <Body>{children}</Body>
     </div>
   );

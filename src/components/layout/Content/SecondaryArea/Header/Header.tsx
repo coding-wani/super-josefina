@@ -8,7 +8,7 @@ export interface HeaderProps {
 export function Header({ children }: HeaderProps) {
   return (
     <header
-      className={`px-4 py-3 border-b ${colors.border.primary}`}
+      className={`px-4 h-10 border-b ${colors.border.primary} flex items-center`}
       aria-label="Secondary content header"
     >
       <span className="text-sm">{children}</span>

@@ -3,9 +3,7 @@ import { MainArea } from "@/components/layout/Content";
 export default function DraftsPage() {
   return (
     <>
-      <MainArea header="Drafts main area header">
-        Drafts main area content
-      </MainArea>
+      <MainArea pageTitle="Drafts">Drafts main area content</MainArea>
     </>
   );
 }
