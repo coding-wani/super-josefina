@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { Header } from "./Header";
-import { Body } from "./Body";
+import { MainHeader } from "./MainHeader";
+import { MainBody } from "./MainBody";
 import { colors } from "@/lib/colors";
 
 export interface MainAreaProps {
@@ -24,13 +24,13 @@ export function MainArea({
       {(pageTitle ||
         leftHeaderComponents.length > 0 ||
         rightHeaderComponents.length > 0) && (
-        <Header
+        <MainHeader
           pageTitle={pageTitle}
           leftComponents={leftHeaderComponents}
           rightComponents={rightHeaderComponents}
         />
       )}
-      <Body>{children}</Body>
+      <MainBody>{children}</MainBody>
     </div>
   );
 }

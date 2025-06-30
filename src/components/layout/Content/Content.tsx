@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { MainArea } from "./MainArea";
+import { MainArea } from "./MainArea/MainArea";
 import { SecondaryArea } from "./SecondaryArea/SecondaryArea";
 import { colors } from "@/lib/colors";
 

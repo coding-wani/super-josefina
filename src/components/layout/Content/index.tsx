@@ -1,12 +1,16 @@
+export { Content } from "./Content";
+
 export { MainArea, type MainAreaProps } from "./MainArea/MainArea";
 export {
   SecondaryArea,
   type SecondaryAreaProps,
 } from "./SecondaryArea/SecondaryArea";
-export { Header, type HeaderProps } from "./MainArea/Header/Header";
-export {
-  Header as SecondaryHeader,
-  type HeaderProps as SecondaryHeaderProps,
-} from "./SecondaryArea/Header/Header";
 
-export { Content } from "./Content";
+export {
+  MainHeader,
+  type MainHeaderProps,
+} from "./MainArea/MainHeader/MainHeader";
+export {
+  SecondaryHeader,
+  type SecondaryHeaderProps,
+} from "./SecondaryArea/SecondaryHeader";
