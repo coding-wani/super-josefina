@@ -5,17 +5,21 @@ export interface InboxNotificationProps {
   notificationTitle: string;
   notificationDescription: string;
   notificationTime: string;
+  notificationId: string;
 }
 
 export default function InboxNotification({
   notificationTitle,
   notificationDescription,
   notificationTime,
+  notificationId,
 }: InboxNotificationProps) {
   return (
     <li
       className="hover:bg-neutral-50 rounded-sm h-14 px-2.5 flex items-center"
       aria-label={`Inbox notification: ${notificationTitle}`}
+      role="listitem"
+      id={notificationId}
     >
       <div
         aria-label="Notification Details"
