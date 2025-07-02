@@ -13,6 +13,10 @@ export const colors = {
     hover: "group-hover:text-neutral-900",
   },
 
+  reminderIcon: {
+    active: "text-violet-500",
+  },
+
   bg: {
     primary: "bg-neutral-100",
     secondary: "bg-neutral-200",

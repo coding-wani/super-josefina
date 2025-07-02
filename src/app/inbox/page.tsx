@@ -10,6 +10,7 @@ import SnoozeOptions from "./components/SecondaryHeader/SnoozeOptions/SnoozeOpti
 import DeleteNotificationAction from "./components/SecondaryHeader/DeleteNotificationAction/DeleteNotificationAction";
 import IssueContent from "./components/IssueContent/IssueContent";
 import ContextPanel from "./components/ContextPanel/ContextPanel";
+import ReminderOptions from "./components/SecondaryHeader/ReminderOptions/ReminderOptions";
 
 export default function InboxPage() {
   return (
@@ -32,6 +33,7 @@ export default function InboxPage() {
           <FavouriteSwitcher key="favourite-switcher" />,
         ]}
         rightHeaderComponents={[
+          <ReminderOptions key="reminder-options" />,
           <SubscriptionSwitcher key="subscription-switcher" />,
           <SnoozeOptions key="snooze-options" />,
           <DeleteNotificationAction key="delete-notification-action" />,
