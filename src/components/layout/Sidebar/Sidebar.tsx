@@ -127,7 +127,7 @@ export default function Sidebar() {
             <AccordionContent className="pb-0">
               <NavLink href="/" className="p-1">
                 <CircleDashed
-                  size={16}
+                  size={14}
                   className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
                 />
                 <span className="text-sm">
@@ -136,14 +136,14 @@ export default function Sidebar() {
               </NavLink>
               <NavLink href="/" className="p-1">
                 <CircleDashed
-                  size={16}
+                  size={14}
                   className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
                 />
                 <span className="text-sm">How to use {config.appName}</span>
               </NavLink>
               <NavLink href="/" className="p-1">
                 <CircleDotDashed
-                  size={16}
+                  size={14}
                   className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
                 />
                 <span className="text-sm">Next steps</span>
