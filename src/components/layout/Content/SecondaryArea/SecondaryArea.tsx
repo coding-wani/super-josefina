@@ -6,7 +6,7 @@ import { colors } from "@/lib/colors";
 export interface SecondaryAreaProps {
   leftHeaderComponents?: ReactNode[];
   rightHeaderComponents?: ReactNode[];
-  widthPreset?: "default" | "half";
+  widthPreset?: "default" | "half" | "double";
   children: ReactNode;
 }
 
@@ -16,13 +16,24 @@ export function SecondaryArea({
   widthPreset = "default",
   children,
 }: SecondaryAreaProps) {
-  const widthClass = widthPreset === "half" ? "flex-1" : "w-80";
+  const getWidthClass = () => {
+    switch (widthPreset) {
+      case "half":
+        return "flex-1";
+      case "double":
+        return "w-[48rem]";
+      default:
+        return "w-80";
+    }
+  };
 
   return (
     <>
-      <div className={`border-l ${colors.border.primary} self-stretch`} />
+      <div className={`border-l ${colors.border.primary}`} />
       <aside
-        className={`${widthClass} overflow-auto flex flex-col ${colors.text.primary}`}
+        className={`${getWidthClass()} overflow-auto flex flex-col ${
+          colors.text.primary
+        }`}
         aria-label="Secondary content area"
       >
         <SecondaryHeader

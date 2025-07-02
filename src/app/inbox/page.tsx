@@ -8,6 +8,8 @@ import FavouriteSwitcher from "./components/SecondaryHeader/FavouriteSwitcher/Fa
 import SubscriptionSwitcher from "./components/SecondaryHeader/SubscriptionSwitcher/SubscriptionSwitcher";
 import SnoozeOptions from "./components/SecondaryHeader/SnoozeOptions/SnoozeOptions";
 import DeleteNotificationAction from "./components/SecondaryHeader/DeleteNotificationAction/DeleteNotificationAction";
+import IssueContent from "./components/IssueContent/IssueContent";
+import ContextPanel from "./components/ContextPanel/ContextPanel";
 
 export default function InboxPage() {
   return (
@@ -23,7 +25,7 @@ export default function InboxPage() {
         Inbox main area content
       </MainArea>
       <SecondaryArea
-        widthPreset="half"
+        widthPreset="double"
         leftHeaderComponents={[
           <Breadcrumbs key="breadcrumbs" />,
           <SecondaryActionsMenu key="secondary-actions" />,
@@ -35,7 +37,8 @@ export default function InboxPage() {
           <DeleteNotificationAction key="delete-notification-action" />,
         ]}
       >
-        Inbox secondary area content
+        <IssueContent />
+        <ContextPanel />
       </SecondaryArea>
     </>
   );

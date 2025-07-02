@@ -6,7 +6,7 @@ export interface SecondaryBodyProps {
 
 export function SecondaryBody({ children }: SecondaryBodyProps) {
   return (
-    <div className="flex-1 p-4 overflow-auto" aria-label="Secondary content">
+    <div className="flex-1 overflow-auto flex" aria-label="Secondary content">
       {children}
     </div>
   );
