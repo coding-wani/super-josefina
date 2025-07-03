@@ -35,12 +35,22 @@ export default function InboxNotification({
         </div>
 
         <div className="flex flex-col" aria-label="Notification Details">
-          <div className="flex items-center gap-1.5 leading-none" aria-label="Unread marker and title">
+          <div
+            className="flex items-center gap-1.5 leading-none"
+            aria-label="Unread marker and title"
+          >
             {isUnread && (
-              <div className={`size-2 rounded-full ${colors.bg.notification}`} aria-label="Unread marker" />
+              <div
+                className={`size-2 rounded-full ${colors.bg.unreadMarker}`}
+                aria-label="Unread marker"
+              />
             )}
             <span
-              className={`text-sm ${isUnread ? `${colors.text.primary} font-medium` : colors.text.secondary}`}
+              className={`text-sm ${
+                isUnread
+                  ? `${colors.text.primary} font-medium`
+                  : colors.text.secondary
+              }`}
               aria-label="Notification title"
             >
               {notificationTitle}

@@ -23,7 +23,7 @@ export const colors = {
     tertiary: "bg-neutral-50",
     card: "bg-white",
     workspaceLogo: "bg-cyan-600",
-    notification: "bg-violet-500",
+    unreadMarker: "bg-violet-500",
   },
 
   border: {
