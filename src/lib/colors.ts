@@ -21,6 +21,7 @@ export const colors = {
     primary: "bg-neutral-100",
     secondary: "bg-neutral-200",
     workspace: "bg-cyan-600",
+    notification: "bg-violet-500",
     card: "bg-white",
   },
 

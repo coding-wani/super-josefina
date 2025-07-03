@@ -6,6 +6,7 @@ export interface InboxNotificationProps {
   notificationDescription: string;
   notificationTime: string;
   notificationId: string;
+  isUnread?: boolean;
 }
 
 export default function InboxNotification({
@@ -13,6 +14,7 @@ export default function InboxNotification({
   notificationDescription,
   notificationTime,
   notificationId,
+  isUnread = false,
 }: InboxNotificationProps) {
   return (
     <li
@@ -33,14 +35,20 @@ export default function InboxNotification({
         </div>
 
         <div className="flex flex-col" aria-label="Notification Details">
+          <div className="flex items-center gap-1.5 leading-none" aria-label="Unread marker and title">
+            {isUnread && (
+              <div className={`size-2 rounded-full ${colors.bg.notification}`} aria-label="Unread marker" />
+            )}
+            <span
+              className={`text-sm ${isUnread ? `${colors.text.primary} font-medium` : colors.text.secondary}`}
+              aria-label="Notification title"
+            >
+              {notificationTitle}
+            </span>
+          </div>
+
           <span
-            className={`${colors.text.secondary} text-sm`}
-            aria-label="Notification title"
-          >
-            {notificationTitle}
-          </span>
-          <span
-            className={`${colors.text.secondary} text-sm`}
+            className={`${colors.text.secondary} text-xs`}
             aria-label="Notification description"
           >
             {notificationDescription}
