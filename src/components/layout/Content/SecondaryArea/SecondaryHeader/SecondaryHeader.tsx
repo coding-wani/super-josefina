@@ -12,7 +12,7 @@ export function SecondaryHeader({
 }: SecondaryHeaderProps) {
   return (
     <header
-      className={`h-10 px-4 border-b ${colors.border.primary} flex items-center justify-between`}
+      className={`h-9 px-4 border-b ${colors.border.primary} flex items-center justify-between`}
       aria-label="Secondary content header"
     >
       {/* Left side components */}

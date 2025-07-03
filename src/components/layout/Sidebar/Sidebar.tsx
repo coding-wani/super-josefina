@@ -26,11 +26,11 @@ import WorkspaceSwitcher from "./WorkspaceSwitcher/WorkspaceSwitcher";
 export default function Sidebar() {
   return (
     <aside
-      className="h-full w-fit p-2 mr-2 flex flex-col gap-2"
+      className="h-full w-fit py-1 px-2 mr-2 flex flex-col gap-2"
       aria-label="Sidebar"
     >
       <header
-        className={`whitespace-nowrap ${colors.text.primary} w-80 flex items-center justify-between`}
+        className={`whitespace-nowrap ${colors.text.primary} w-70 flex items-center justify-between`}
         aria-label="Sidebar header"
       >
         <WorkspaceSwitcher />
@@ -86,7 +86,9 @@ export default function Sidebar() {
           type="multiple"
         >
           <AccordionItem value="workspace">
-            <AccordionTrigger className="pb-1 flex items-center justify-start gap-2">
+            <AccordionTrigger
+              className={`pb-1 flex items-center justify-start gap-1 text-xs ${colors.text.secondary}`}
+            >
               Workspace
             </AccordionTrigger>
             <AccordionContent className="pb-0">
@@ -121,7 +123,9 @@ export default function Sidebar() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="favorites">
-            <AccordionTrigger className="pb-1 flex items-center justify-start gap-2">
+            <AccordionTrigger
+              className={`pb-1 flex items-center justify-start gap-1 text-xs ${colors.text.secondary}`}
+            >
               Favorites
             </AccordionTrigger>
             <AccordionContent className="pb-0">
@@ -151,7 +155,9 @@ export default function Sidebar() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="your-teams">
-            <AccordionTrigger className="pb-1 flex items-center justify-start gap-2">
+            <AccordionTrigger
+              className={`pb-1 flex items-center justify-start gap-1 text-xs ${colors.text.secondary}`}
+            >
               Your teams
             </AccordionTrigger>
             <AccordionContent className="pb-0">
@@ -160,7 +166,9 @@ export default function Sidebar() {
                 type="multiple"
               >
                 <AccordionItem value="red-team">
-                  <AccordionTrigger className="flex items-center justify-start gap-2 py-1">
+                  <AccordionTrigger
+                    className={`flex items-center justify-start gap-2 py-1 text-xs ${colors.text.secondary}`}
+                  >
                     <SquareUserRound
                       size={16}
                       className={`${colors.icon.primary} ${colors.icon.hover} transition-colors !rotate-0`}

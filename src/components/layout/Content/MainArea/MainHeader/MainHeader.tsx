@@ -14,7 +14,7 @@ export function MainHeader({
 }: MainHeaderProps) {
   return (
     <header
-      className={`h-10 px-4 py-3 border-b ${colors.border.primary} flex items-center justify-between`}
+      className={`h-9 px-4 py-3 border-b ${colors.border.primary} flex items-center justify-between`}
       aria-label="Main content header"
     >
       {/* Left side components */}
