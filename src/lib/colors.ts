@@ -20,6 +20,7 @@ export const colors = {
   bg: {
     primary: "bg-neutral-100",
     secondary: "bg-neutral-200",
+    workspace: "bg-cyan-600",
     card: "bg-white",
   },
 
