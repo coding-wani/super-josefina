@@ -7,7 +7,7 @@ export default function IssueContent() {
         className={`mt-8 mb-2 font-semibold text-xl ${colors.text.primary}`}
         aria-label="Issue title"
       >
-        Issue title
+        Issue title 4
       </div>
       <div
         className={`text-sm ${colors.text.primary}`}
