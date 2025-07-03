@@ -20,7 +20,10 @@ export default function IssueReactions() {
         <span className="text-sm font-medium">1</span>
       </div>
 
-      <div className="px-1" aria-label="Add reaction button">
+      <div
+        className={`flex items-center justify-center size-7.5 rounded-full hover:border ${colors.border.secondary} hover:${colors.bg.primary}`}
+        aria-label="Add reaction button"
+      >
         <SmilePlus size={16} />
       </div>
     </div>
