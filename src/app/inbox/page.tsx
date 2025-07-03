@@ -1,17 +1,17 @@
 import { MainArea, SecondaryArea } from "@/components/layout/Content";
-import MainActionsMenu from "./components/ContentMainHeader/MainActionsMenu/MainActionsMenu";
-import FilterOptions from "./components/ContentMainHeader/FilterOptions/FilterOptions";
-import SortOptions from "./components/ContentMainHeader/SortOptions/SortOptions";
-import Breadcrumbs from "./components/ContentSecondaryHeader/Breadcrumbs/Breadcrumbs";
-import SecondaryActionsMenu from "./components/ContentSecondaryHeader/SecondaryActionsMenu/SecondaryActionMenu";
-import FavouriteSwitcher from "./components/ContentSecondaryHeader/FavouriteSwitcher/FavouriteSwitcher";
-import SubscriptionSwitcher from "./components/ContentSecondaryHeader/SubscriptionSwitcher/SubscriptionSwitcher";
-import SnoozeOptions from "./components/ContentSecondaryHeader/SnoozeOptions/SnoozeOptions";
-import DeleteNotificationAction from "./components/ContentSecondaryHeader/DeleteNotificationAction/DeleteNotificationAction";
-import IssueContent from "./components/ContentMainBody/IssueContent/IssueContent";
-import ContextPanel from "./components/ContentMainBody/ContextPanel/ContextPanel";
-import ReminderOptions from "./components/ContentSecondaryHeader/ReminderOptions/ReminderOptions";
-import InboxNotificationsList from "./components/ContentMainBody/InboxNotificationsList/InboxNotificationsList";
+import MainActionsMenu from "./components/InboxMainHeader/MainActionsMenu/MainActionsMenu";
+import FilterOptions from "./components/InboxMainHeader/FilterOptions/FilterOptions";
+import SortOptions from "./components/InboxMainHeader/SortOptions/SortOptions";
+import Breadcrumbs from "./components/InboxSecondaryHeader/Breadcrumbs/Breadcrumbs";
+import SecondaryActionsMenu from "./components/InboxSecondaryHeader/SecondaryActionsMenu/SecondaryActionMenu";
+import FavouriteSwitcher from "./components/InboxSecondaryHeader/FavouriteSwitcher/FavouriteSwitcher";
+import SubscriptionSwitcher from "./components/InboxSecondaryHeader/SubscriptionSwitcher/SubscriptionSwitcher";
+import SnoozeOptions from "./components/InboxSecondaryHeader/SnoozeOptions/SnoozeOptions";
+import DeleteNotificationAction from "./components/InboxSecondaryHeader/DeleteNotificationAction/DeleteNotificationAction";
+import IssueContent from "./components/IssueContent/IssueContent";
+import ContextPanel from "./components/ContextPanel/ContextPanel";
+import ReminderOptions from "./components/InboxSecondaryHeader/ReminderOptions/ReminderOptions";
+import InboxNotificationsList from "./components/InboxNotificationsList/InboxNotificationsList";
 
 export default function InboxPage() {
   return (
