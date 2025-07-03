@@ -1,5 +1,6 @@
 import { colors } from "@/lib/colors";
-import { Heart, SmilePlus, ThumbsUp } from "lucide-react";
+import IssueReactions from "./IssueReactions/IssueReactions";
+import { Paperclip } from "lucide-react";
 
 export default function IssueContent() {
   return (
@@ -16,28 +17,17 @@ export default function IssueContent() {
       >
         Issue description
       </div>
+
       <div
-        className="flex items-center gap-2 pt-2.5 pb-4"
-        aria-label="Reactions"
+        aria-label="Issue footer"
+        className="flex items-center justify-between gap-2 pt-2.5 pb-4"
       >
+        <IssueReactions />
         <div
-          aria-label="Like reaction counter"
-          className={`flex items-center gap-1 border py-1 px-2 rounded-xl ${colors.border.primary} ${colors.bg.primary} hover:${colors.bg.tertiary}`}
+          aria-label="Attach images, files or videos button"
+          className={`flex items-center justify-center size-7.5 rounded-full hover:border ${colors.border.secondary} hover:${colors.bg.primary}`}
         >
-          <ThumbsUp size={12} />
-          <span className="text-sm font-medium">1</span>
-        </div>
-
-        <div
-          aria-label="Heart reaction counter"
-          className={`flex items-center gap-1 border py-1 px-2 rounded-xl ${colors.border.primary} ${colors.bg.primary} hover:${colors.bg.tertiary}`}
-        >
-          <Heart size={12} />
-          <span className="text-sm font-medium">1</span>
-        </div>
-
-        <div className="px-1" aria-label="Add reaction button">
-          <SmilePlus size={16} />
+          <Paperclip size={12} />
         </div>
       </div>
     </div>

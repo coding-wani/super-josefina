@@ -28,6 +28,7 @@ export const colors = {
 
   border: {
     primary: "border-neutral-200",
+    secondary: "border-neutral-100",
   },
 
   hover: {
