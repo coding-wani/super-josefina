@@ -21,9 +21,9 @@ export const colors = {
     primary: "bg-neutral-100",
     secondary: "bg-neutral-200",
     tertiary: "bg-neutral-50",
-    workspace: "bg-cyan-600",
-    notification: "bg-violet-500",
     card: "bg-white",
+    workspaceLogo: "bg-cyan-600",
+    notification: "bg-violet-500",
   },
 
   border: {
