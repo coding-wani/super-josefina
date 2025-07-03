@@ -11,7 +11,7 @@ export default function ContextPanel() {
     <>
       <div className={`border-l ${colors.border.primary}`} />
       <div
-        className="h-full p-4 w-60 flex flex-col gap-3"
+        className="h-full py-3 px-6 w-54 flex flex-col gap-3"
         aria-label="Context panel"
       >
         <IssueProperties />
