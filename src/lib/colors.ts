@@ -8,9 +8,9 @@ export const colors = {
 
   icon: {
     primary: "text-neutral-700",
-    secondary: "text-neutral-500",
+    secondary: "text-neutral-600",
     active: "text-neutral-900",
-    hover: "group-hover:text-neutral-900",
+    groupHover: "group-hover:text-neutral-900",
   },
 
   reminderIcon: {

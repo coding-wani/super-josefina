@@ -44,7 +44,7 @@ export default function Sidebar() {
           >
             <Search
               size={16}
-              className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+              className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
             />
           </button>
           <button
@@ -53,7 +53,7 @@ export default function Sidebar() {
           >
             <SquarePen
               size={16}
-              className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+              className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
             />
           </button>
         </div>
@@ -62,21 +62,21 @@ export default function Sidebar() {
         <NavLink href="/inbox" className="p-1">
           <Inbox
             size={16}
-            className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+            className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
           />
           <span className="text-sm">Inbox</span>
         </NavLink>
         <NavLink href="/my-issues" className="p-1">
           <CircleDot
             size={16}
-            className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+            className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
           />
           <span className="text-sm">My issues</span>
         </NavLink>
         <NavLink href="/drafts" className="p-1">
           <NotebookPen
             size={16}
-            className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+            className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
           />
           <span className="text-sm">Drafts</span>
         </NavLink>
@@ -95,28 +95,28 @@ export default function Sidebar() {
               <NavLink href="/members" className="p-1">
                 <UsersRound
                   size={16}
-                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                  className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                 />
                 <span className="text-sm">Members</span>
               </NavLink>
               <NavLink href="/teams" className="p-1">
                 <SquareUserRound
                   size={16}
-                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                  className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                 />
                 <span className="text-sm">Teams</span>
               </NavLink>
               <NavLink href="/projects" className="p-1">
                 <Box
                   size={16}
-                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                  className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                 />
                 <span className="text-sm">Projects</span>
               </NavLink>
               <NavLink href="/views" className="p-1">
                 <Layers2
                   size={16}
-                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                  className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                 />
                 <span className="text-sm">Views</span>
               </NavLink>
@@ -132,7 +132,7 @@ export default function Sidebar() {
               <NavLink href="/" className="p-1">
                 <CircleDashed
                   size={14}
-                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                  className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                 />
                 <span className="text-sm">
                   Welcome to {config.workspaceName}
@@ -141,14 +141,14 @@ export default function Sidebar() {
               <NavLink href="/" className="p-1">
                 <CircleDashed
                   size={14}
-                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                  className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                 />
                 <span className="text-sm">How to use {config.appName}</span>
               </NavLink>
               <NavLink href="/" className="p-1">
                 <CircleDotDashed
                   size={14}
-                  className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                  className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                 />
                 <span className="text-sm">Next steps</span>
               </NavLink>
@@ -171,7 +171,7 @@ export default function Sidebar() {
                   >
                     <SquareUserRound
                       size={16}
-                      className={`${colors.icon.primary} ${colors.icon.hover} transition-colors !rotate-0`}
+                      className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors !rotate-0`}
                     />
                     <span className="text-sm font-normal">Red Team</span>
                   </AccordionTrigger>
@@ -179,21 +179,21 @@ export default function Sidebar() {
                     <NavLink href="/" className="p-1">
                       <CircleDot
                         size={16}
-                        className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                        className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                       />
                       <span className="text-sm">Issues</span>
                     </NavLink>
                     <NavLink href="/projects" className="p-1">
                       <Box
                         size={16}
-                        className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                        className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                       />
                       <span className="text-sm">Projects</span>
                     </NavLink>
                     <NavLink href="/views" className="p-1">
                       <Layers2
                         size={16}
-                        className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                        className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                       />
                       <span className="text-sm">Views</span>
                     </NavLink>
@@ -203,7 +203,7 @@ export default function Sidebar() {
                   <AccordionTrigger className="flex items-center justify-start gap-2 py-1">
                     <SquareUserRound
                       size={16}
-                      className={`${colors.icon.primary} ${colors.icon.hover} transition-colors !rotate-0`}
+                      className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors !rotate-0`}
                     />
                     <span className="text-sm font-normal">Blue Team</span>
                   </AccordionTrigger>
@@ -211,21 +211,21 @@ export default function Sidebar() {
                     <NavLink href="/" className="p-1">
                       <CircleDot
                         size={16}
-                        className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                        className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                       />
                       <span className="text-sm">Issues</span>
                     </NavLink>
                     <NavLink href="/projects" className="p-1">
                       <Box
                         size={16}
-                        className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                        className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                       />
                       <span className="text-sm">Projects</span>
                     </NavLink>
                     <NavLink href="/views" className="p-1">
                       <Layers2
                         size={16}
-                        className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                        className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                       />
                       <span className="text-sm">Views</span>
                     </NavLink>
@@ -235,7 +235,7 @@ export default function Sidebar() {
                   <AccordionTrigger className="flex items-center justify-start gap-2 py-1">
                     <SquareUserRound
                       size={16}
-                      className={`${colors.icon.primary} ${colors.icon.hover} transition-colors !rotate-0`}
+                      className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors !rotate-0`}
                     />
                     <span className="text-sm font-normal">Green Team</span>
                   </AccordionTrigger>
@@ -243,21 +243,21 @@ export default function Sidebar() {
                     <NavLink href="/" className="p-1">
                       <CircleDot
                         size={16}
-                        className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                        className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                       />
                       <span className="text-sm">Issues</span>
                     </NavLink>
                     <NavLink href="/projects" className="p-1">
                       <Box
                         size={16}
-                        className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                        className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                       />
                       <span className="text-sm">Projects</span>
                     </NavLink>
                     <NavLink href="/views" className="p-1">
                       <Layers2
                         size={16}
-                        className={`${colors.icon.primary} ${colors.icon.hover} transition-colors`}
+                        className={`${colors.icon.primary} ${colors.icon.groupHover} transition-colors`}
                       />
                       <span className="text-sm">Views</span>
                     </NavLink>
