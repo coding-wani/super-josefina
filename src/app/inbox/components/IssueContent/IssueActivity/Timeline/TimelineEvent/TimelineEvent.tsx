@@ -19,7 +19,7 @@ export default function TimelineEvent({ id, description }: TimelineEventProps) {
         />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
-      <span>{description}</span>
+      <span className="text-xs">{description}</span>
     </div>
   );
 }
