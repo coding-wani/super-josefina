@@ -19,7 +19,7 @@ export default function SendButton({ hasContent, type }: SendButtonProps) {
         rounded-full
         ${
           hasContent
-            ? `${colors.bg.sendingButton} ${colors.border.sendingButton} text-white`
+            ? `${colors.bg.sendingButton} ${colors.bg.hover.sendingButton} ${colors.border.sendingButton} text-white hover:text-white`
             : `bg-white ${colors.border.primary} ${colors.text.secondary}`
         }
         `}

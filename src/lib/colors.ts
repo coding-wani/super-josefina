@@ -25,6 +25,9 @@ export const colors = {
     workspaceLogo: "bg-cyan-600",
     unreadMarker: "bg-violet-500",
     sendingButton: "bg-violet-500",
+    hover: {
+      sendingButton: "hover:bg-violet-600",
+    },
   },
 
   border: {
