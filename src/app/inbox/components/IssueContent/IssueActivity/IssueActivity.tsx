@@ -4,7 +4,7 @@ import Timeline from "./Timeline/Timeline";
 
 export default function IssueActivity() {
   return (
-    <div aria-label="Issue activity">
+    <div aria-label="Issue activity" className="mt-1.5">
       <div
         aria-label="Issue activity header"
         className="flex items-center justify-between"
