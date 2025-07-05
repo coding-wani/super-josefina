@@ -4,14 +4,13 @@ import IssueComment from "../../IssueComment/IssueComment";
 import TimelineEventSeparator from "./TimelineEventSeparator/TimelineEventSeparator";
 
 const timelineElements = [
-  { id: "timeline-event-7", description: "Timeline event 6", type: "event" },
+  { id: "timeline-event-6", description: "Timeline event 5", type: "event" },
   {
     id: "timeline-comment-2",
     description: "Issue comment 2",
     author: "John Doe",
     type: "comment",
   },
-  { id: "timeline-event-6", description: "Timeline event 5", type: "event" },
   { id: "timeline-event-5", description: "Timeline event 5", type: "event" },
   { id: "timeline-event-4", description: "Timeline event 4", type: "event" },
   {
