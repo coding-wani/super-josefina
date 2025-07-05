@@ -1,6 +1,6 @@
 import { colors } from "@/lib/colors";
 import { CircleUserRound } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Timeline from "./Timeline/Timeline";
 
 export default function IssueActivity() {
   return (
@@ -54,51 +54,8 @@ export default function IssueActivity() {
           </div>
         </div>
       </div>
-      <div
-        aria-label="Activity timeline"
-        className="flex flex-col gap-2 border p-4 border-blue-500"
-      >
-        <div
-          aria-label="timeline event"
-          className="flex items-center gap-2 border border-blue-200"
-        >
-          <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
-          <span> Timeline event 4</span>
-        </div>
-        <div
-          aria-label="timeline event"
-          className="flex items-center gap-2 border border-blue-200"
-        >
-          <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
-          <span> Timeline event 3</span>
-        </div>
-        <div
-          aria-label="timeline event"
-          className="flex items-center gap-2 border border-blue-200"
-        >
-          <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
-          <span> Timeline event 2</span>
-        </div>
-        <div
-          aria-label="timeline event"
-          className="flex items-center gap-2 border border-blue-200"
-        >
-          <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
-          <span> Timeline event 1</span>
-        </div>
-      </div>
+
+      <Timeline />
     </div>
   );
 }
