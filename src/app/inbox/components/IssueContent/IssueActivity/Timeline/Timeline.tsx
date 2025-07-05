@@ -38,7 +38,7 @@ const timelineElements = [
   },
   {
     id: "timeline-event-5",
-    description: "John Doe removed label <color marker + label name 3>",
+    description: "John Doe removed label <color marker + label name 1>",
     type: "event",
   },
   {
@@ -61,7 +61,7 @@ const timelineElements = [
   {
     id: "timeline-event-8",
     description:
-      "John Doe self-assigned the issue and added labels <color marker + label name 1> and <color marker + label name 2>",
+      "John Doe self-assigned the issue and added labels <color marker + label name 2>",
     type: "event",
   },
 ];
