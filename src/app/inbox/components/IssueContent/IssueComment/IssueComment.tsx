@@ -13,7 +13,7 @@ export default function IssueComment({
   return (
     <div
       aria-label="Issue comment"
-      className={`border ${colors.border.primary} rounded-md p-4 bg-white shadow-sm`}
+      className={`border ${colors.border.primary} rounded-md my-4 p-4 bg-white shadow-sm`}
       key={id}
     >
       <div

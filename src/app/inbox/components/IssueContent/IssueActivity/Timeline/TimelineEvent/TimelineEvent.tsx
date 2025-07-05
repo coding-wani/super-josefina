@@ -9,7 +9,7 @@ export default function TimelineEvent({ id, description }: TimelineEventProps) {
   return (
     <div
       aria-label="Timeline event"
-      className="flex items-center gap-2"
+      className="flex items-center gap-2 mx-2.5"
       key={id}
     >
       <Avatar className="size-4">

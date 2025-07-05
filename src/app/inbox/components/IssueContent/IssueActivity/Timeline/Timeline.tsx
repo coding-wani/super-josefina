@@ -27,7 +27,7 @@ const timelineElements = [
 
 export default function Timeline() {
   return (
-    <div aria-label="Timeline" className="flex flex-col px-2.5 py-5">
+    <div aria-label="Timeline" className="flex flex-col  py-5">
       {timelineElements.map((element, index) => (
         <Fragment key={element.id}>
           {(() => {
@@ -51,7 +51,11 @@ export default function Timeline() {
                 return null;
             }
           })()}
-          {index < timelineElements.length - 1 && <TimelineEventSeparator />}
+          {index < timelineElements.length - 1 &&
+            element.type === "event" &&
+            timelineElements[index + 1].type === "event" && (
+              <TimelineEventSeparator />
+            )}
         </Fragment>
       ))}
     </div>
