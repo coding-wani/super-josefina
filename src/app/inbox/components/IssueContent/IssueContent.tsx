@@ -6,7 +6,6 @@ import IssueSubIssues from "./IssueSubIssues/IssueSubIssues";
 import IssueActivity from "./IssueActivity/IssueActivity";
 import IssueLinks from "./IssueLinks/IssueLinks";
 import CommentComposer from "./CommentComposer/CommentComposer";
-import IssueComment from "./IssueComment/IssueComment";
 
 export default function IssueContent() {
   return (
@@ -23,7 +22,6 @@ export default function IssueContent() {
       <IssueSubIssues />
       <IssueLinks />
       <IssueActivity />
-      <IssueComment />
       <CommentComposer />
     </div>
   );

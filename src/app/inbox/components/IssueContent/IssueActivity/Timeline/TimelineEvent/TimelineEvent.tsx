@@ -12,7 +12,7 @@ export default function TimelineEvent({ id, description }: TimelineEventProps) {
       className="flex items-center gap-2"
       key={id}
     >
-      <Avatar className="size-5">
+      <Avatar className="size-4">
         <AvatarImage
           src="https://github.com/shadcn.png"
           alt="Timeline event avatar"
