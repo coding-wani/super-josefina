@@ -14,15 +14,17 @@ export default function IssueContent() {
       <IssueDescription />
       <div
         aria-label="Issue footer"
-        className="flex items-center justify-between gap-2 pt-2.5 pb-4 px-1"
+        className="flex items-center justify-between gap-2 pt-2.5 pb-1 px-1"
       >
         <IssueReactions />
         <AttachFileButton />
       </div>
-      <IssueSubIssues />
-      <IssueLinks />
-      <IssueActivity />
-      <CommentComposer />
+      <div className="flex flex-col gap-1">
+        <IssueSubIssues />
+        <IssueLinks />
+        <IssueActivity />
+        <CommentComposer />
+      </div>
     </div>
   );
 }

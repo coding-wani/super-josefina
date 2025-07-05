@@ -22,7 +22,7 @@ export default function IssueSubIssues() {
         <Accordion
           type="single"
           collapsible
-          className="[&>*]:border-b-0 [&_[data-slot=accordion-trigger]]:hover:no-underline"
+          className="[&>*]:border-b-0 [&_[data-slot=accordion-trigger]]:hover:no-underline ml-4"
         >
           <AccordionItem value="sub-issue(s)">
             <AccordionTrigger
