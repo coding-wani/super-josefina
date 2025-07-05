@@ -9,7 +9,10 @@ import CommentComposer from "./CommentComposer/CommentComposer";
 
 export default function IssueContent() {
   return (
-    <div aria-label="Issue content" className="h-full px-4 flex-1">
+    <div
+      aria-label="Issue content"
+      className="h-full px-4 flex-1 overflow-y-auto pt-8 pb-14"
+    >
       <IssueTitle />
       <IssueDescription />
       <div
@@ -19,7 +22,8 @@ export default function IssueContent() {
         <IssueReactions />
         <AttachFileButton />
       </div>
-      <div className="flex flex-col gap-1">
+
+      <div aria-label="Issue related content" className="flex flex-col gap-1">
         <IssueSubIssues />
         <IssueLinks />
         <IssueActivity />
